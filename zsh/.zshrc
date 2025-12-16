@@ -21,3 +21,8 @@ setopt share_history
 setopt hist_expire_dups_first
 setopt hist_ignore_dups
 setopt hist_verify
+
+# Eza and zoxide for better ls and cd commands
+#alias ls="eza --icons=always"
+eval "$(zoxide init zsh)"
+alias cd="z"
