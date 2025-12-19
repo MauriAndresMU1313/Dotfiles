@@ -9,6 +9,13 @@ config.font = wezterm.font("Ubuntu Mono")
 
 -- Hide window decoration at the top (because it has a different color)
 config.window_decorations = "INTEGRATED_BUTTONS|RESIZE"
+--config.enable_tab_bar = false
+
+-- Colors
+config.colors = {
+  selection_bg = "#ffffd7",  -- Light yellow (color 230 equivalent)
+  selection_fg = "#000000",  -- Black text
+}
 
 -- Opacity 
 config.window_background_opacity = 0.92
