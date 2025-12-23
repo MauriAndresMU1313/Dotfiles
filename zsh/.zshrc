@@ -13,6 +13,17 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# Command color (before 230, and it was not present)
+ZSH_HIGHLIGHT_STYLES[command]='fg=220'           # Valid commands
+ZSH_HIGHLIGHT_STYLES[builtin]='fg=220'           # Built-in commands
+ZSH_HIGHLIGHT_STYLES[alias]='fg=220'             # Aliases
+ZSH_HIGHLIGHT_STYLES[unknown-token]='fg=196'     # Invalid commands (red)
+# Double and single quotes colors
+ZSH_HIGHLIGHT_STYLES[single-quoted-argument]='fg=212'
+ZSH_HIGHLIGHT_STYLES[double-quoted-argument]='fg=212'
+# for, if, while, do, done, etc.
+ZSH_HIGHLIGHT_STYLES[reserved-word]='fg=191'
+
 # History set up
 HISTFILE=$HOME/.zhistory
 SAVEHIST=1000
