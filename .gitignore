@@ -1,8 +1,18 @@
 # Profile
 .zprofile
+*_history
+.zhistory
+.zsh_history
 
-# History
-"*_history"
+# Vim/Neovim history
+.viminfo
+.neovim
 
-# Vim
-".viminfo"
+# macOS
+.DS_Store
+
+# Secrets
+**/secrets
+**/.env
+**/tokens
+**/.ssh
